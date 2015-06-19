@@ -134,12 +134,13 @@ namespace comp2007_assign1
                 //get the current user control form
                 currentForm = (UserForm)MainContent.FindControl("form" + index);
 
+                //set the fields to default values
                 currentForm.results = "-1";
                 currentForm.score = "";
                 currentForm.pointsAllowed = "";
                 currentForm.spectators = "";
-            }
-        }
+            }//end of for
+        }//end of ClearButton
 
         private void clear()//clears the results fields
         {
@@ -151,6 +152,6 @@ namespace comp2007_assign1
             TotalSpecLabel.Text = "";
             PointDifferenceLabel.Text = "";
             AvgSpecLabel.Text = "";
-        }
+        }//end of clear
     }//end of class
 }//end of program
